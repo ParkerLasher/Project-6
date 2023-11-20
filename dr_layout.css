@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html {
+	height: 100%;
+	margin: 0 6% 0 6%;
+	padding: 0;
+	border:0;
+	background-color: rgb(255,174,0);
+}
+
+body {
+	margin: 0px auto auto auto;
+	width: 100%;
+	min-width: 320px;
+	background-color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 1.7vw;
+	font-weight: 500;
+
+}
+
+body > header > nav > ul {
+	display: block;
+	width: 100%;
+	background-color: #000154;
+	height: 30px;
+}
+
+body > header > nav > ul > li {
+	display: block;
+	width: 20%;
+	float: right;
+	font-size: 0.8em;
+	color: white; 
+	height: 100%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+body > header > nav > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+nav.horizontal > ul > li {
+	display: inline-block;
+	position: relative;
+	width: 12.5%;
+	float: left;
+	background-color: #495057;
+	
+}
+nav.horizontal > ul > li > a{
+	display: block;
+}
+
+ul.dropdown{
+	position: absolute;
+	left:0;
+	top: 100%;
+	display:none;
+}
+ul.dropdown li {
+	margin: 0;
+	padding: 0;
+}
+nav.horizontal > ul > li:hover > .dropdown {
+	display: block;
+	background-color: #495057;
+}
+ul.dropdown li a:hover {
+	background-color: #495057;
+	color: white;
+}
+ul .dropdown li a{
+	color:white;
+	padding: 5px 10px;
+	display: block;
+	text-decoration: none;
+}
+
+body > header > nav > ul > li > a:visited {
+	color: white;
+}
+
+body > header > nav > ul > li > a:hover {
+	color: white;
+	background-color: black;
+}
+
+body > header > nav > ul > li > a:active {
+	color: white;
+	background-color:black;
+}
+
+body > header > nav > ul > li > a:focus {
+	color: white;
+	background-color: black;
+}
+body > section > h1 {
+	font-size: 4.5vw;
+	padding-left: 4%;
+	padding-top: .5%;
+	margin-top: 0%;
+	margin-bottom: 1%;
+}
+body > section > p{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+footer {
+	clear: left;
+	background-color: #495057;
+	color: white;
+	text-align:center;
+	vertical-align: middle;
+	height: 30px;
+	font-size: 0.7em;
+}
+.bannerhead{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+
+}
+.cards{
+	width: 80%;
+	max-width: 300px;
+	margin: 1em;
+	/*padding: 1em*/
+	background-color: white;
+	border-radius: 1em;
+	border: 2px solid #000;
+	overflow: hidden;
+}
+.card-image{
+	width:100%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.cards-info{
+	padding: 1.5em;
+	padding-bottom: 3em;
+}
+.cards-info > h1 { 
+	text-align: center;
+	font-size: 1.5em;
+	color: #222222;
+}
+.cards-info > p{
+	font-size: 1em;
+	color: #222222;
+	text-align: center;
+	line-height: 170%;
+	margin-top: 1em;
+}
+.image-bottles{
+	width:100%;
+	height: 500px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.image-cans{
+	width:100%;
+	height: 400px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.image-signs{
+	width:100%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.image-coasters{
+	width:100%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.image-trays{
+	width:100%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 29px; 
+    z-index: 15;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+	background-color: rgb(255,174,0);
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 80%;
+    height: 100%;
+    background: #333;
+    overflow-y: auto;
+    transition: right 0.3s;
+    z-index: 15;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.mobile-nav.active {
+    right: 0; 
+}
+.mobile-nav-top {
+    display: none; 
+    background-color: #333; 
+    padding: 10px 15px; 
+    box-sizing: border-box; 
+}
+.close-nav {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+}
+.brand-text {
+    color: rgb(255, 174, 0);
+    font-size: 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+		flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+		max-width: 100%;
+        margin: 0.5em 0;
+    }
+	.horizontal {
+        display: none;
+    }
+	.hamburger {
+        display: flex;
+    }
+	.mobile-nav-top {
+        display: block;
+    }
+	body > section > p{
+		font-size: 2.0em;
+	}
+	footer{
+		font-size: 1.2em;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	.mobile-nav a {
+        font-size: 3.2em;
+        display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+    }
+	.mobile-nav a i {
+        margin-right: .5em;
+    }
+	.cards-info > h1{
+		font-size: 3.0em;
+	}
+	.cards-info > p{
+		font-size: 2.5em;
+		color:blue;
+	}
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .cards {
+        margin: 10px 0;
+    }
+	.horizontal {
+        display: none;
+    }
+	.hamburger {
+        display: flex;
+    }
+	.mobile-nav-top {
+        display: block;
+    }
+	body > section > p{
+		font-size: 2.0em;
+	}
+	footer{
+		font-size: 1.5em;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.mobile-nav a {
+        font-size: 3.2em;
+        padding: 90px;
+        display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+    }
+	.mobile-nav a i {
+        margin-right: .5em;
+    }
+	.cards-info > h1{
+		font-size: 3.0em;
+	}
+	.cards-info > p {
+		font-size: 2.5em;
+		color:blue;
+	}	
+}
