@@ -222,7 +222,7 @@ footer {
 .hamburger {
     display: none;
     position: absolute;
-    top: 120px;
+    top: 121px;
     right: 32px; 
     z-index: 15;
     cursor: pointer;
