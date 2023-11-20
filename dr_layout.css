@@ -165,16 +165,16 @@ footer {
 }
 .cards-info{
 	padding: 1.5em;
-	padding-bottom: 3em;
+	padding-bottom: 1.5em;
 }
 .cards-info > h1 { 
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.0em;
 	color: #222222;
 }
 .cards-info > p{
-	font-size: 1em;
-	color: #222222;
+	font-size: .8em;
+	color: blue;
 	text-align: center;
 	line-height: 170%;
 	margin-top: 1em;
@@ -294,7 +294,9 @@ footer {
 }
 .brand-text {
     color: rgb(255, 174, 0);
-    font-size: 20px; 
+}
+.nav-brand-footer{
+	color: rgb(255, 174, 0);
 }
 
 @media only screen and (max-width: 768px) {
@@ -348,19 +350,14 @@ footer {
     }
 	.mobile-nav {
         width: 60%;
-		 /* Further adjust for smaller screens if needed */
-        /* ... other styles ... */
     }
 	.mobile-nav li a {
-        padding: 8px 15px; /* Consistent padding with the above */
-        font-size: 2.5em; /* Further reduce font size for smaller screens */
-        /* ... other styles ... */
+        padding: 8px 15px;
+        font-size: 2.5em;
     }
-    /* Similar adjustment for the `ul` as above */
     .mobile-nav ul {
         margin: 0;
         padding: 0;
-        /* Other styles */
     }
 }
 @media only screen and (max-width: 480px) {
@@ -412,20 +409,15 @@ footer {
     }
 	.mobile-nav {
         width: 50%;
-		 /* Further adjust for smaller screens if needed */
-        /* ... other styles ... */
     }
     
     .mobile-nav li a {
-        padding: 5px; /* Consistent padding with the above */
-        font-size: 2.5em; /* Further reduce font size for smaller screens */
-        /* ... other styles ... */
+        padding: 5px;
+        font-size: 2.5em;
     }
-    /* Similar adjustment for the `ul` as above */
     .mobile-nav ul {
         margin: 0;
         padding: 0;
-        /* Other styles */
     }
 	.nav-brand-footer{
 		color: rgb(255, 174, 0);
