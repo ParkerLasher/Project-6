@@ -41,7 +41,6 @@
             </nav>
         </header>
         <div class="mobile-nav">
-            <button class="close-nav" aria-label="Close navigation menu" onclick="closeMenu()">&times;</button>
             <ul>
                 <li><a href="index.html"><i class="fa-regular fa-house" style="color: rgb(255, 174, 0);"></i>Home</a></li>
                 <li><a href="beerBottles.html"><i class="fa-sharp fa-light fa-wine-bottle" style="color: rgb(255, 174, 0);"></i>Beer Bottles</a></li>
@@ -58,26 +57,20 @@
             <h1><i><strong>Home</strong></i></h1>
             <p><b>WE BUY & SELL BEER SIGNS</b></p>
             <p>Email us if you have something to sell at <a href="mailto:info@breweryfx.com">info@breweryfx.com</a>.<br>
-               Or<br> Call us at <a>(717)368-7111</a><br> Thanks! </p>
-            
+               Or<br> Call us at <a>(717)368-7111</a><br> Thanks! </p>  
         </section>
 
         <footer>
-            <p><i><b>Breweryfx.com</b> &#9830 Email: <a href="mailto:info@breweryfx.com">info@breweryfx.com</a> &#9830 Phone: <a>(717)368-7111</a> &#9830 Address: <a href="https://www.google.com/maps/place/800+Estelle+Dr,+Lancaster,+PA+17601/@40.0549256,-76.3972208,17z/data=!4m15!1m8!3m7!1s0x89c626c24cfd5859:0xca9332b72fa73fe!2s677+Estelle+Dr,+Lancaster,+PA+17601!3b1!8m2!3d40.0549256!4d-76.3946459!16s%2Fg%2F11g8dh673l!3m5!1s0x89c626c2dd1b7f77:0x9ccb763a38e5f4eb!8m2!3d40.0548053!4d-76.3971652!16s%2Fg%2F11bw3xj5lj?entry=ttu" target="blank">677 Estelle Dr, Lancaster, PA 17601</a> </i></p>
+            <p><i><b class="nav-brand-footer">BreweryFX.com</b></i></p>
         </footer>
+
         <script>
-            function toggleMenu() {
-                document.querySelector('.mobile-nav').classList.toggle('active');
-            }
-            
-            function closeMenu() {
-                document.querySelector('.mobile-nav').classList.remove('active');
-            }
-        
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelector('.hamburger').addEventListener('click', toggleMenu);
-                document.querySelector('.close-nav').addEventListener('click', closeMenu);
-            });
+        function toggleMenu() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+        });
         </script>
     </body>
 </html>

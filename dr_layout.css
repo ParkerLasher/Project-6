@@ -126,7 +126,7 @@ body > section > p{
 
 footer {
 	clear: left;
-	background-color: #495057;
+	background-color: #333;
 	color: white;
 	text-align:center;
 	vertical-align: middle;
@@ -189,7 +189,7 @@ footer {
 }
 .image-cans{
 	width:100%;
-	height: 400px;
+	height: 525px;
 	object-fit: contain;
 	display: block;
 	box-sizing:border-box;
@@ -205,7 +205,7 @@ footer {
 }
 .image-coasters{
 	width:100%;
-	height: 300px;
+	height: 392px;
 	object-fit: contain;
 	display: block;
 	box-sizing:border-box;
@@ -213,7 +213,7 @@ footer {
 }
 .image-trays{
 	width:100%;
-	height: 300px;
+	height: 520px;
 	object-fit: contain;
 	display: block;
 	box-sizing:border-box;
@@ -222,8 +222,8 @@ footer {
 .hamburger {
     display: none;
     position: absolute;
-    top: 121px;
-    right: 32px; 
+    top: 138px;
+    right: 20px; 
     z-index: 15;
     cursor: pointer;
     flex-direction: column;
@@ -253,10 +253,9 @@ footer {
 }
 .mobile-nav {
     position: fixed;
-    top: 0;
     right: -100%; 
     width: 80%;
-    height: 100%;
+    height: auto;
     background: #333;
     overflow-y: auto;
     transition: right 0.3s;
@@ -280,7 +279,7 @@ footer {
 .mobile-nav-top {
     display: none; 
     background-color: #333; 
-    padding: 10px 15px; 
+    padding: 15px 20px; 
     box-sizing: border-box; 
 }
 .close-nav {
@@ -324,7 +323,6 @@ footer {
 	}
 	footer{
 		font-size: 1.2em;
-		padding-top: 15px;
 		padding-bottom: 10px;
 	}
 	.mobile-nav a {
@@ -344,6 +342,26 @@ footer {
 		font-size: 2.5em;
 		color:blue;
 	}
+	html {
+        margin: 0; 
+        padding: 0;
+    }
+	.mobile-nav {
+        width: 60%;
+		 /* Further adjust for smaller screens if needed */
+        /* ... other styles ... */
+    }
+	.mobile-nav li a {
+        padding: 8px 15px; /* Consistent padding with the above */
+        font-size: 2.5em; /* Further reduce font size for smaller screens */
+        /* ... other styles ... */
+    }
+    /* Similar adjustment for the `ul` as above */
+    .mobile-nav ul {
+        margin: 0;
+        padding: 0;
+        /* Other styles */
+    }
 }
 @media only screen and (max-width: 480px) {
     .container {
@@ -367,8 +385,8 @@ footer {
 	}
 	footer{
 		font-size: 1.5em;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 15px;
+		padding-bottom: 20px;
 	}
 	.mobile-nav a {
         font-size: 3.2em;
@@ -387,5 +405,33 @@ footer {
 	.cards-info > p {
 		font-size: 2.5em;
 		color:blue;
-	}	
+	}
+	html {
+        margin: 0;
+        padding: 0;
+    }
+	.mobile-nav {
+        width: 50%;
+		 /* Further adjust for smaller screens if needed */
+        /* ... other styles ... */
+    }
+    
+    .mobile-nav li a {
+        padding: 5px; /* Consistent padding with the above */
+        font-size: 2.5em; /* Further reduce font size for smaller screens */
+        /* ... other styles ... */
+    }
+    /* Similar adjustment for the `ul` as above */
+    .mobile-nav ul {
+        margin: 0;
+        padding: 0;
+        /* Other styles */
+    }
+	.nav-brand-footer{
+		color: rgb(255, 174, 0);
+		font-size: 2.5em;
+	}
+	.brand-text{
+		font-size: 3.5em;
+	}
 }
