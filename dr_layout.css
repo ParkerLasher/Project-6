@@ -223,7 +223,7 @@ footer {
     display: none;
     position: absolute;
     top: 120px;
-    right: 29px; 
+    right: 32px; 
     z-index: 15;
     cursor: pointer;
     flex-direction: column;
