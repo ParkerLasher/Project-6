@@ -121,7 +121,7 @@ body > section > p{
 	margin-top: 1%;
 	margin-bottom: 2%;
 	text-align: center;
-	font-size: 1.5vw;
+	font-size: 2.5vw;
 }
 
 footer {
@@ -131,7 +131,7 @@ footer {
 	text-align:center;
 	vertical-align: middle;
 	height: 30px;
-	font-size: 0.7em;
+	font-size: 1.3em;
 }
 .bannerhead{
 	width: 100%;
@@ -219,6 +219,14 @@ footer {
 	box-sizing:border-box;
 	background-color: black;
 }
+.image-labels{
+	width:100%;
+	height: 250px;
+	object-fit: contain;
+	display: block;
+	box-sizing:border-box;
+	background-color: black;
+}
 .hamburger {
     display: none;
     position: absolute;
@@ -255,6 +263,7 @@ footer {
     position: fixed;
     right: -100%; 
     width: 80%;
+	top:180px;
     height: auto;
     background: #333;
     overflow-y: auto;
@@ -406,14 +415,18 @@ footer {
 	html {
         margin: 0;
         padding: 0;
+		height: 100%;
+		border:0;
+		background-color: #333;
     }
+	
 	.mobile-nav {
         width: 50%;
-    }
-    
+	}
+	
     .mobile-nav li a {
         padding: 5px;
-        font-size: 2.5em;
+        font-size: 2.9em;
     }
     .mobile-nav ul {
         margin: 0;
@@ -426,4 +439,18 @@ footer {
 	.brand-text{
 		font-size: 3.5em;
 	}
+	.mobile-nav li a .nav-icon {
+        width: 25px; 
+        height: 25px; 
+		transform: translateY(4px);
+        margin-right: 5px; 
+		fill: rgb(255,174,0);
+    }
+	html, body {
+        max-width: 100%;
+        overflow-x: hidden; 
+    }
+	
+	
+	
 }
