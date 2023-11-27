@@ -78,7 +78,7 @@ nav.horizontal > ul > li:hover > .dropdown {
 	background-color: #333;
 }
 ul.dropdown li a:hover {
-	background-color: #495057;
+	background-color: black;
 	color: white;
 }
 ul .dropdown li a{
@@ -231,7 +231,7 @@ footer {
 .hamburger {
     display: none;
     position: absolute;
-    top: 138px;
+    top: 142px;
     right: 20px; 
     z-index: 15;
     cursor: pointer;
